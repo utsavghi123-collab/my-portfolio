@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utsav Ghimire | Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <span>UG.</span> Utsav Ghimire
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" >Home</a>
+                <a href="technical-interests.html" >Technical Interests</a>
+                <a href="portfolio.html" >Portfolio</a>
+                <a href="project-details.html" >Project Details</a>
+                <a href="contact.html" class="active">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Contact Me Section -->
+    <section class="contact">
+        <div class="container">
+
+            <h1>Contact Me</h1>
+            <p class="contact-intro">
+                If you have any questions or would like to
+                get in touch, please fill out the form below.
+            </p>
+
+            <div class="contact-box">
+
+                <h2>Send a Message</h2>
+
+                <form id="contactForm">
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name"
+                        name="name" placeholder="Your name"
+                        autocomplete="name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email"
+                        name="email" placeholder="Your email"
+                        autocomplete="email" required>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject"
+                        name="subject" placeholder="Subject"
+                        required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"
+                            rows="5"
+                            placeholder="Write your message"
+                            required></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                    <p id="formMessage" role="status"
+                    aria-live="polite"></p>
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Utsav Ghimire. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

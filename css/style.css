@@ -1,0 +1,434 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f9f3;
+    color: #333;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Navigation */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dce8d9;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: #254d36;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.logo span {
+    background-color: #347a50;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-right: 8px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #2c8a52;
+}
+
+/* Profile Section */
+.profile {
+    background-color: #e5f2e2;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.profile-img {
+    width: 220px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.profile h1 {
+    color: #24543a;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.student-title {
+    font-size: 18px;
+    color: #456b50;
+}
+
+.university {
+    display: inline-block;
+    background-color: #c9e5c7;
+    color: #24543a;
+    padding: 5px 18px;
+    border-radius: 20px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.degree {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #555;
+}
+
+/* About Section */
+.about {
+    padding: 55px 0;
+    background-color: white;
+}
+
+h2 {
+    font-size: 25px;
+    color: #286044;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Personal Information */
+.information {
+    padding: 50px 0 60px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-box {
+    background-color: white;
+    border: 1px solid #dbe9d8;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.info-box h3 {
+    color: #31754b;
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+.info-box p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 7px;
+}
+
+/* Technical Interests Page */
+.technical-interests {
+    padding: 50px 0;
+}
+
+.technical-interests h1 {
+    color: #24543a;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.interest-intro {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.interest-box {
+    background-color: white;
+    border: 1px solid #dbe9d8;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.interest-box img {
+    width: 100%;
+    max-width: 450px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.interest-box h2 {
+    color: #31754b;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.interest-box p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Portfolio Page */
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio h1 {
+    color: #24543a;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.portfolio-intro {
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.portfolio-card {
+    background: white;
+    border: 1px solid #dbe9d8;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 500px;
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.portfolio-content {
+    padding: 25px;
+}
+
+.portfolio-content h2 {
+    color: #31754b;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.portfolio-content p {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.view-btn {
+    display: inline-block;
+    background: #347a50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.view-btn:hover {
+    background: #24543a;
+}
+
+/* Project Details Page */
+.project-details {
+    padding: 50px 0;
+}
+
+.project-details h1 {
+    color: #24543a;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.project-intro {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.project-box {
+    background: white;
+    border: 1px solid #dbe9d8;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 1500px;
+}
+
+.project-box img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.project-box h2 {
+    color: #286044;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.project-box h3 {
+    color: #31754b;
+    font-size: 19px;
+    margin: 20px 0 10px;
+}
+
+.project-box p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.project-box ul {
+    padding-left: 20px;
+    color: #555;
+    line-height: 1.9;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    background: #347a50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background: #24543a;
+}
+
+/* Contact Page */
+.contact {
+    padding: 50px 0;
+}
+
+.contact h1 {
+    color: #24543a;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contact-intro {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-box {
+    background: white;
+    border: 1px solid #dbe9d8;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 1200px;
+}
+
+.contact-box h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: 2px solid #347a50;
+    outline-offset: 1px;
+}
+
+.contact button {
+    background: #347a50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #24543a;
+}
+
+#formMessage {
+    color: #286044;
+    margin-top: 15px;
+}
+
+.contact-info {
+    margin-top: 35px;
+}
+
+.contact-info h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.contact-info p {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.contact-info a {
+    color: #286044;
+}
+
+/* Footer */
+footer {
+    background-color: #28563b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
