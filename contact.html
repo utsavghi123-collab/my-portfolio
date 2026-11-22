@@ -39,7 +39,7 @@
 
                 <h2>Send a Message</h2>
 
-                <form id="contactForm">
+                <form id="contactForm" novalidate>
 
                     <label for="name">Full Name</label>
                     <input type="text" id="name"
@@ -76,6 +76,32 @@
     <footer>
         <p>&copy; 2026 Utsav Ghimire. All Rights Reserved.</p>
     </footer>
+    <script>
+        const form = document.getElementById("contactForm");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const subject = document.getElementById("subject").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            if (name === "" || email === "" || subject === "" || message === "") {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            if (!email.includes("@") || !email.includes(".")) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            alert("Form validated successfully! This is a demo, so no message was sent.");
+            form.reset();
+        });
+    </script>
+
 
 </body>
 </html>
